@@ -6,7 +6,7 @@ spring:
     nacos:
       config:
         server-addr: 192.168.177.114:8848
-        namespace: gulimall-coupon
+        namespace: coupon
         group: dev
         extension-configs:
           - data-id: datasource.yml
