@@ -6,6 +6,8 @@ import java.util.Map;
 //import org.apache.shiro.authz.annotation.RequiresPermissions;
 import cn.ayana.gulimall.member.feign.CouponFeignService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -26,6 +28,7 @@ import cn.ayana.common.utils.R;
  * @email yychen_114@stu.xidian.edu.cn
  * @date 2023-02-18 21:54:07
  */
+@RefreshScope
 @RestController
 @RequestMapping("member/member")
 public class MemberController {
@@ -35,11 +38,15 @@ public class MemberController {
     @Autowired
     CouponFeignService couponFeignService;
 
+    @Value("${t.name}")
+    String testName;
+
     @RequestMapping("/coupons")
     public R testFeign(){
         MemberEntity memberEntity = new MemberEntity();
-        memberEntity.setNickname("张三");
+        memberEntity.setNickname(testName);
         R membercoupons = couponFeignService.membercoupons();
+        System.out.println(testName);
 
         return R.ok().put("member",memberEntity).put("coupons",membercoupons.get("coupons"));
     }
