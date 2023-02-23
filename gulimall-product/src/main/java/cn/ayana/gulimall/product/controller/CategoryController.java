@@ -1,9 +1,11 @@
 package cn.ayana.gulimall.product.controller;
 
 import java.util.Arrays;
+import java.util.List;
 import java.util.Map;
 
 //import org.apache.shiro.authz.annotation.RequiresPermissions;
+import cn.ayana.gulimall.product.vo.CategoryTreeListVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -36,10 +38,10 @@ public class CategoryController {
      */
     @RequestMapping("/list")
     //@RequiresPermissions("product:category:list")
-    public R list(@RequestParam Map<String, Object> params){
-        PageUtils page = categoryService.queryPage(params);
+    public R list(){
+        List<CategoryTreeListVO> entities = categoryService.listWithTree();
 
-        return R.ok().put("page", page);
+        return R.ok().put("data", entities);
     }
 
 
