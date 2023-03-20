@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import cn.ayana.gulimall.product.entity.AttrGroupEntity;
 import cn.ayana.gulimall.product.service.AttrGroupService;
-import cn.ayana.common.utils.PageUtils;
-import cn.ayana.common.utils.R;
+import cn.ayana.gulimall.common.utils.PageUtils;
+import cn.ayana.gulimall.common.utils.R;
 
 
 
@@ -34,10 +34,11 @@ public class AttrGroupController {
     /**
      * 列表
      */
-    @RequestMapping("/list")
+    @RequestMapping("/list/{catalogId}")
     //@RequiresPermissions("product:attrgroup:list")
-    public R list(@RequestParam Map<String, Object> params){
-        PageUtils page = attrGroupService.queryPage(params);
+    public R list(@RequestParam Map<String, Object> params,@PathVariable("catalogId") Long catalogId){
+//        PageUtils page = attrGroupService.queryPage(params);
+        PageUtils page = attrGroupService.queryPage(params,catalogId);
 
         return R.ok().put("page", page);
     }

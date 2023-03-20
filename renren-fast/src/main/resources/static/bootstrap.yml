@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: renren-fast
+
+  cloud:
+    nacos:
+      config:
+        server-addr: 192.168.177.114:8848
+        namespace: renren-fast
+        group: dev

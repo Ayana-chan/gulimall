@@ -1,7 +1,7 @@
 package cn.ayana.gulimall.coupon.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import cn.ayana.common.utils.PageUtils;
+import cn.ayana.gulimall.common.utils.PageUtils;
 import cn.ayana.gulimall.coupon.entity.SpuBoundsEntity;
 
 import java.util.Map;

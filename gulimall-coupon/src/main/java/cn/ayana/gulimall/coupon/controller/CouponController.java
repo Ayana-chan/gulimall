@@ -14,8 +14,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import cn.ayana.gulimall.coupon.entity.CouponEntity;
 import cn.ayana.gulimall.coupon.service.CouponService;
-import cn.ayana.common.utils.PageUtils;
-import cn.ayana.common.utils.R;
+import cn.ayana.gulimall.common.utils.PageUtils;
+import cn.ayana.gulimall.common.utils.R;
 
 
 

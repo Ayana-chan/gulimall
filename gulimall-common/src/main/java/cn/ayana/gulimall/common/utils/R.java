@@ -6,7 +6,7 @@
  * 版权所有，侵权必究！
  */
 
-package cn.ayana.common.utils;
+package cn.ayana.gulimall.common.utils;
 
 import org.apache.http.HttpStatus;
 

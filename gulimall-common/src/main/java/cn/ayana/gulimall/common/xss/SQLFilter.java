@@ -6,10 +6,10 @@
  * 版权所有，侵权必究！
  */
 
-package cn.ayana.common.xss;
+package cn.ayana.gulimall.common.xss;
 
 
-import cn.ayana.common.exception.RRException;
+import cn.ayana.gulimall.common.exception.RRException;
 import org.apache.commons.lang.StringUtils;
 
 /**

@@ -6,9 +6,9 @@
  * 版权所有，侵权必究！
  */
 
-package cn.ayana.common.utils;
+package cn.ayana.gulimall.common.utils;
 
-import cn.ayana.common.xss.SQLFilter;
+import cn.ayana.gulimall.common.xss.SQLFilter;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.core.metadata.OrderItem;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;

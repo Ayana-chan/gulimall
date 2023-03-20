@@ -6,7 +6,7 @@
  * 版权所有，侵权必究！
  */
 
-package cn.ayana.common.exception;
+package cn.ayana.gulimall.common.exception;
 
 /**
  * 自定义异常

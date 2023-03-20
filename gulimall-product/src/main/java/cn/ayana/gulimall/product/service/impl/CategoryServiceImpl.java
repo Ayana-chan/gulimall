@@ -11,8 +11,8 @@ import java.util.stream.Collectors;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import cn.ayana.common.utils.PageUtils;
-import cn.ayana.common.utils.Query;
+import cn.ayana.gulimall.common.utils.PageUtils;
+import cn.ayana.gulimall.common.utils.Query;
 
 import cn.ayana.gulimall.product.dao.CategoryDao;
 import cn.ayana.gulimall.product.entity.CategoryEntity;
@@ -48,6 +48,13 @@ public class CategoryServiceImpl extends ServiceImpl<CategoryDao, CategoryEntity
         List<CategoryTreeListVO> menus = getChildren(0,VOs);
 
         return menus;
+    }
+
+    @Override
+    public void removeMenuByIds(List<Long> asList) {
+        //TODO: 检查当前删除的菜单是否被引用
+
+        baseMapper.deleteBatchIds(asList);
     }
 
     private List<CategoryTreeListVO> getChildren(long aimParentCid,List<CategoryTreeListVO> all){

@@ -6,7 +6,7 @@
  * 版权所有，侵权必究！
  */
 
-package cn.ayana.common.utils;
+package cn.ayana.gulimall.common.utils;
 
 //import io.renren.common.validator.group.AliyunGroup;
 //import io.renren.common.validator.group.QcloudGroup;

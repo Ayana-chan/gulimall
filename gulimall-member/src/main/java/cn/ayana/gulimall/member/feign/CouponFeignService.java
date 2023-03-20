@@ -1,6 +1,6 @@
 package cn.ayana.gulimall.member.feign;
 
-import cn.ayana.common.utils.R;
+import cn.ayana.gulimall.common.utils.R;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.RequestMapping;
 

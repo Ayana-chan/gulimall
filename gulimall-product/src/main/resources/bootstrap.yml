@@ -1,6 +1,6 @@
 spring:
   application:
-    name: product
+    name: gulimall-product
 
   cloud:
     nacos:

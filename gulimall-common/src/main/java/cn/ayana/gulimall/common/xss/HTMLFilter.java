@@ -1,4 +1,4 @@
-package cn.ayana.common.xss;
+package cn.ayana.gulimall.common.xss;
 
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;

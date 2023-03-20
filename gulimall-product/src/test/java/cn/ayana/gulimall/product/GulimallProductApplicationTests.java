@@ -13,9 +13,9 @@ class GulimallProductApplicationTests {
     BrandService brandService;
 
     @Test
-    void contextLoads() {
+    public void contextLoads() {
 
-        BrandEntity brandEntity=new BrandEntity();
+        BrandEntity brandEntity = new BrandEntity();
         brandEntity.setDescript("");
         brandEntity.setName("白象");
         brandService.save(brandEntity);

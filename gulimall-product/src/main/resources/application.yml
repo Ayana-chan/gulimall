@@ -19,3 +19,10 @@ mybatis-plus:
 
 server:
   port: 10000
+  error:
+    include-message: always
+    include-binding-errors: always
+
+logging:
+  level:
+    cn.ayana.gulimall: debug

@@ -1,7 +1,7 @@
 package cn.ayana.gulimall.member.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import cn.ayana.common.utils.PageUtils;
+import cn.ayana.gulimall.common.utils.PageUtils;
 import cn.ayana.gulimall.member.entity.MemberCollectSubjectEntity;
 
 import java.util.Map;

@@ -1,7 +1,7 @@
 package cn.ayana.gulimall.product.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import cn.ayana.common.utils.PageUtils;
+import cn.ayana.gulimall.common.utils.PageUtils;
 import cn.ayana.gulimall.product.entity.UndoLogEntity;
 
 import java.util.Map;

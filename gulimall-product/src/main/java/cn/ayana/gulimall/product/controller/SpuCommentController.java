@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import cn.ayana.gulimall.product.entity.SpuCommentEntity;
 import cn.ayana.gulimall.product.service.SpuCommentService;
-import cn.ayana.common.utils.PageUtils;
-import cn.ayana.common.utils.R;
+import cn.ayana.gulimall.common.utils.PageUtils;
+import cn.ayana.gulimall.common.utils.R;
 
 
 

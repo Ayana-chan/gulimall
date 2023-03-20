@@ -1,7 +1,7 @@
 package cn.ayana.gulimall.ware.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import cn.ayana.common.utils.PageUtils;
+import cn.ayana.gulimall.common.utils.PageUtils;
 import cn.ayana.gulimall.ware.entity.WareOrderTaskDetailEntity;
 
 import java.util.Map;

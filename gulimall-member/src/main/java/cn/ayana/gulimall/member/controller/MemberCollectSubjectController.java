@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import cn.ayana.gulimall.member.entity.MemberCollectSubjectEntity;
 import cn.ayana.gulimall.member.service.MemberCollectSubjectService;
-import cn.ayana.common.utils.PageUtils;
-import cn.ayana.common.utils.R;
+import cn.ayana.gulimall.common.utils.PageUtils;
+import cn.ayana.gulimall.common.utils.R;
 
 
 
